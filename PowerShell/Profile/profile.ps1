@@ -2,6 +2,8 @@ Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 
 . .\Paths.ps1
 
+Set-Item Env:HOME "$Env:HOMEDRIVE$env:HOMEPATH"
+
 # Load posh-git module from current directory
 Import-Module .\posh-git
 
