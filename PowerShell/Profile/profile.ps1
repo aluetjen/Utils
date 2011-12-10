@@ -1,6 +1,7 @@
 Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 
 . .\Paths.ps1
+. .\Aliases.ps1
 
 Set-Item Env:HOME "$Env:HOMEDRIVE$env:HOMEPATH"
 
